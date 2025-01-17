@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, li, p, h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    list-style-type: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Jura", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Header and Navigation */
+header {
+    width: 100%;
+    height: 10vh;
+    min-height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+}
+
+.logo h1 {
+    font-size: 2.4rem;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    margin-left: 40px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+.dropdown {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 40px;
+    background-color: #f9f9f9;
+    padding: 10px 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    min-width: 200px;
+}
+
+.dropdown li a {
+    color: #333;
+    margin: 0;
+    padding: 12px 20px;
+    border-radius: 0;
+}
+
+.dropdown li a:hover {
+    background-color: #ddd;
+}
+
+nav ul li:hover > .dropdown {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        background-color: black;
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        overflow-y: auto;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        margin: 0;
+        padding: 15px;
+        width: 100%;
+        display: block;
+    }
+
+    .dropdown {
+        position: static;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+        display: none;
+        width: 100%;
+        background-color: #1a1a1a;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .dropdown-parent.active .dropdown {
+        display: block;
+    }
+
+    .dropdown li a {
+        color: white;
+        padding-left: 30px;
+    }
+
+    .dropdown li a:hover {
+        background-color: #333;
+        color: white;
+    }
+}
+
+/* Larger Screen Adjustments */
+@media screen and (min-width: 1200px) {
+    header {
+        padding: 0 10%;
+    }
+
+    nav ul li a {
+        margin-left: 60px;
+    }
+}
