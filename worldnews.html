@@ -23,10 +23,10 @@
     </a>
     <ul id="nav-menu">
       <li>
-        <a href="worldnews.html" class="page-link">Новости VP</a>
+        <a href="" class="page-link">Новости VP</a>
       </li>
       <li>
-        <a href="russianews.html" class="page-link">VP в России</a>
+        <a href="#" class="page-link">VP в России</a>
       </li>
       <li class="dropdown-parent">
         <a href="#" class="page-link">VP Участники</a>
@@ -60,7 +60,24 @@
     </ul>
   </nav>
 </header>
-<section class="general_container">
+<section class="news_container">
+  <div class="news-banner">
+    <h2>Новости</h2>
+  </div>
+  <div class="category_buttons">
+    <button class="radio-button active" data-category="all">
+      Все
+    </button>
+    <button class="radio-button" data-category="interview">
+      Интервью
+    </button>
+    <button class="radio-button" data-category="reviews">
+      Обзоры
+    </button>
+    <button class="radio-button" data-category="events">
+      События
+    </button>
+  </div>
   <div class="news_block">
     <div class="card" data-category="interview">
       <div class="card_image">
@@ -89,7 +106,35 @@
         <span class="date">21.01.2025</span>
       </div>
     </div>
+    <div class="card" data-category="interview">
+      <div class="card_image">
+        <img src="assets/img/image%20(1).png" alt="News 3">
+      </div>
+      <div class="card_content">
+        <h2>Интервью с CEO</h2>
+        <span class="date">21.01.2025</span>
+      </div>
+    </div>
+    <div class="card" data-category="reviews">
+      <div class="card_image">
+        <img src="assets/img/image%20(1).png" alt="News 3">
+      </div>
+      <div class="card_content">
+        <h2>Обзор нового VR</h2>
+        <span class="date">21.01.2025</span>
+      </div>
+    </div>
+    <div class="card" data-category="events">
+      <div class="card_image">
+        <img src="assets/img/image%20(1).png" alt="News 3">
+      </div>
+      <div class="card_content">
+        <h2>Вебинар по VP</h2>
+        <span class="date">21.01.2025</span>
+      </div>
+    </div>
   </div>
+
 </section>
 <script src="assets/js/script.js"></script>
 </body>
