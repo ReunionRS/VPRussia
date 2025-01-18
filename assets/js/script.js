@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const dropdownParents = document.querySelectorAll('.dropdown-parent');
     const categoryButtons = document.querySelectorAll('.radio-button');
     const newsCards = document.querySelectorAll('.card');
+    const navLinks = document.querySelectorAll('nav ul li a');
 
 
     dropdownParents.forEach(parent => {
@@ -26,10 +27,16 @@ document.addEventListener('DOMContentLoaded', function() {
     function filterNews(category) {
         newsCards.forEach(card => {
             if (category === 'all' || card.dataset.category === category) {
-                card.style.display = 'block';
+                card.style.display = 'block'; // Показываем карточку
             } else {
-                card.style.display = 'none';
+                card.style.display = 'none'; // Скрываем карточку
             }
         });
     }
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.forEach(navLink => navLink.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
 });

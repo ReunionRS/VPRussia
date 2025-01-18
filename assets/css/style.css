@@ -64,7 +64,8 @@ nav ul li a {
 
 nav ul li a.active {
     color: #000000;
-    font-weight: bold;
+    background-color: white;
+    transition: 0.3s ease;
 }
 
 li a:hover{
