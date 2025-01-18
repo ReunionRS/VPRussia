@@ -313,3 +313,78 @@
         width: 150px;
     }
 }
+
+/* Общая адаптивность для контейнера */
+@media (max-width: 1200px) {
+    .vacation_view_block {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+}
+/* Адаптивность для vacation-preview */
+@media (max-width: 1024px) {
+    .vacation-preview {
+        height: auto;
+    }
+    .preview-content {
+        height: auto; /* Allow content to determine height */
+        padding-bottom: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .preview-content h3{
+        font-size: 1.8rem;
+    }
+    .preview-info{
+        font-size: 1.3rem;
+    }
+    .preview-city{
+        font-size: 1.2rem;
+    }
+
+}
+/* Адаптивность для vacation-info */
+@media (max-width: 1024px) {
+    .vacation-info {
+        width: 90%; /* Адаптивная ширина */
+        margin: 30px auto 10px; /* Адаптивные отступы и центрирование */
+    }
+}
+@media (max-width: 768px) {
+    .vacation-info {
+        margin: 20px auto 10px; /* Адаптивные отступы */
+    }
+}
+
+/* Адаптивность для what-we-need */
+@media (max-width: 768px) {
+    .what-we-need {
+        height: auto;
+    }
+
+    .what-we-need h2{
+        font-size: 1.8rem;
+        margin-left: 0.5rem;
+    }
+
+    .what-we-need p{
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .what-we-need h2{
+        font-size: 1.6rem;
+    }
+    .what-we-need p{
+        font-size: 1rem;
+    }
+    .vacation-info {
+        width: 95%; /* Адаптивная ширина */
+    }
+
+}
