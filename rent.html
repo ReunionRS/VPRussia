@@ -60,37 +60,52 @@
     </ul>
   </nav>
 </header>
-<section class="general_container">
-  <div class="news_block">
-    <div class="card" data-category="interview">
-      <div class="card_image">
-        <img src="assets/img/image.png" alt="News 3">
-      </div>
-      <div class="card_content">
-        <h2>Unreal Engine 5 в кинопроизводстве</h2>
-        <span class="date">21.01.2025</span>
-      </div>
+<section class="venues_block">
+  <div class="venue-card">
+    <div class="venue-image">
+      <img src="assets/img/image%20(3).png">
     </div>
-    <div class="card" data-category="reviews">
-      <div class="card_image">
-        <img src="assets/img/image%20(1).png" alt="News 3">
-      </div>
-      <div class="card_content">
-        <h2>Обзор новой камеры</h2>
-        <span class="date">21.01.2025</span>
-      </div>
+    <div class="venue-content">
+      <h3>Штатив</h3>
+      <p class="venue-city">2420р за сутки</p>
+      <button class="rent_btn">Арендовать</button>
     </div>
-    <div class="card" data-category="events">
-      <div class="card_image">
-        <img src="assets/img/image%20(1).png" alt="News 3">
-      </div>
-      <div class="card_content">
-        <h2>Конференция в Москве</h2>
-        <span class="date">21.01.2025</span>
-      </div>
+  </div>
+  <div class="venue-card">
+    <div class="venue-image">
+      <img src="assets/img/image%20(3).png">
+    </div>
+    <div class="venue-content">
+      <h3>Штатив</h3>
+      <p class="venue-city">2420р за сутки</p>
+      <button class="rent_btn">Арендовать</button>
+    </div>
+  </div>
+  <div class="venue-card">
+    <div class="venue-image">
+      <img src="assets/img/image%20(3).png">
+    </div>
+    <div class="venue-content">
+      <h3>Штатив</h3>
+      <p class="venue-city">2420р за сутки</p>
+      <button class="rent_btn">Арендовать</button>
     </div>
   </div>
 </section>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Заявка на аренду</h2>
+    <form class="form_rent">
+      <label for="fio">Введите ваше ФИО:</label><br>
+      <input type="text" placeholder="Ваше ФИО" id="fio" name="fio" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" placeholder="Почта" id="email" name="email" required><br><br>
+      <input type="submit" id="send_btn" value="Отправить">
+    </form>
+  </div>
+</div>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
