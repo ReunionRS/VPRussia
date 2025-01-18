@@ -1,0 +1,125 @@
+/* Адаптивность */
+@media (max-width: 768px) {
+    nav{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav img{
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    nav ul li{
+        margin: 0.5rem 0;
+    }
+    .nav-toggle-label {
+        display: block;
+    }
+
+    #nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: black;
+        height: 100vh;
+        width: 250px;
+        padding-top: 50px;
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+    #nav-toggle:checked ~ #nav-menu {
+        transform: translateX(0);
+    }
+    .dropdown-parent {
+        position: static; /* Отменяем абсолютное позиционирование */
+    }
+    .dropdown{
+        position: static;
+        box-shadow: none;
+        background-color: transparent;
+        margin: 0;
+        display: none; /* Скрываем dropdown по умолчанию */
+        padding-left: 20px;
+    }
+    .dropdown.active{
+        display: block;
+    }
+    .dropdown li a{
+        color: white;
+        padding: 10px 0;
+        text-align: left;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    nav {
+        width: 95%;
+    }
+    nav ul li {
+        font-size: 1.1rem;
+        margin: 0 1.2rem;
+    }
+    .news_block {
+        padding: 20px 5%;
+    }
+
+    .card {
+        height: 350px;
+    }
+
+    .card_content h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    nav {
+        width: 90%;
+    }
+    nav ul li {
+        font-size: 1.1rem;
+        margin: 0 1.3rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1301px) {
+    nav {
+        width: 80%;
+    }
+    nav ul li {
+        font-size: 1.2rem;
+        margin: 0 1.5rem;
+    }
+}
+
+/* Адаптивность блока новостей*/
+@media (max-width: 600px) {
+    .news_block {
+        grid-template-columns: 1fr; /* Одна колонка на маленьких экранах */
+    }
+    .card {
+        width: 100%; /* Карточка на всю ширину на мобильных */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .news_block {
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки на планшетах */
+    }
+    .card {
+        width: 100%; /* Карточка на всю ширину */
+    }
+}
+@media (min-width: 1000px) {
+    .news_block {
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); /* возврат к изначальному для десктопов */
+    }
+}

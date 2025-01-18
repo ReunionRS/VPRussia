@@ -2,60 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VPRussia - Информационный портал про Virtual Production</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VPRussia - Технологический портал про Virtual Production</title>
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/media.css" rel="stylesheet">
+  <link rel="icon" href="assets/img/png/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <header>
-  <div class="logo">
-    <h1>VPRussia</h1>
-  </div>
-  <div class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
   <nav>
-    <ul class="nav-menu">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span class="hamburger"></span>
+    </label>
+    <a href="index.html" class="logo-link">
+      <h1 alt="Логотип" class="logo">VPRussia</h1>
+    </a>
+    <ul id="nav-menu">
       <li>
-        <a href="#">Новости VP</a>
+        <a href="#" class="page-link">Новости VP</a>
       </li>
       <li>
-        <a href="#">VP в России</a>
+        <a href="#" class="page-link">VP в России</a>
       </li>
       <li class="dropdown-parent">
-        <a href="#">VP Участники</a>
+        <a href="#" class="page-link">VP Участники</a>
         <ul class="dropdown">
-          <li><a href="#">Площадки</a></li>
-          <li><a href="#">Продакшн</a></li>
-          <li><a href="#">Рентал</a></li>
-          <li><a href="#">Производители</a></li>
-          <li><a href="#">Персоны</a></li>
+          <li><a href="#" class="page-link">Площадки</a></li>
+          <li><a href="#" class="page-link">Продакшн</a></li>
+          <li><a href="#" class="page-link">Рентал</a></li>
+          <li><a href="#" class="page-link">Производители</a></li>
+          <li><a href="#" class="page-link">Персоны</a></li>
         </ul>
       </li>
       <li class="dropdown-parent">
-        <a href="#">Образование</a>
+        <a href="#" class="page-link">Образование</a>
         <ul class="dropdown">
-          <li><a href="#">Интенсивы</a></li>
-          <li><a href="#">Словарь</a></li>
-          <li><a href="#">Справочные материалы</a></li>
+          <li><a href="#" class="page-link">Интенсивы</a></li>
+          <li><a href="#" class="page-link">Словарь</a></li>
+          <li><a href="#" class="page-link">Справочные материалы</a></li>
         </ul>
       </li>
       <li class="dropdown-parent">
-        <a href="#">Биржа</a>
+        <a href="#" class="page-link">Биржа</a>
         <ul class="dropdown">
-          <li><a href="#">Аренда</a></li>
-          <li><a href="#">Вакансии</a></li>
-          <li><a href="#">Специалисты</a></li>
+          <li><a href="#" class="page-link">Аренда</a></li>
+          <li><a href="#" class="page-link">Вакансии</a></li>
+          <li><a href="#" class="page-link">Специалисты</a></li>
         </ul>
       </li>
       <li>
-        <a href="#">О проекте</a>
+        <a href="#" class="page-link">О проекте</a>
       </li>
     </ul>
   </nav>
 </header>
-</body>
+<section class="news_container">
+  <div class="news-banner">
+    <h2>Новости</h2>
+  </div>
+  <div class="category_buttons">
+    <button class="radio-button active" data-category="all">
+      Все
+    </button>
+    <button class="radio-button" data-category="interview">
+      Интервью
+    </button>
+    <button class="radio-button" data-category="reviews">
+      Обзоры
+    </button>
+    <button class="radio-button" data-category="events">
+      События
+    </button>
+  </div>
+  <div class="news_block">
+    <div class="card" data-category="interview">
+      <div class="card_image">
+        <img src="assets/img/image.png" alt="News 3">
+      </div>
+      <div class="card_content">
+        <h2>Unreal Engine 5 в кинопроизводстве</h2>
+        <span class="date">21.01.2025</span>
+      </div>
+    </div>
+    <div class="card" data-category="reviews">
+      <div class="card_image">
+        <img src="assets/img/image%20(1).png" alt="News 3">
+      </div>
+      <div class="card_content">
+        <h2>Обзор новой камеры</h2>
+        <span class="date">21.01.2025</span>
+      </div>
+    </div>
+    <div class="card" data-category="events">
+      <div class="card_image">
+        <img src="assets/img/image%20(1).png" alt="News 3">
+      </div>
+      <div class="card_content">
+        <h2>Конференция в Москве</h2>
+        <span class="date">21.01.2025</span>
+      </div>
+    </div>
+    <div class="card" data-category="interview">
+      <div class="card_image">
+        <img src="assets/img/image%20(1).png" alt="News 3">
+      </div>
+      <div class="card_content">
+        <h2>Интервью с CEO</h2>
+        <span class="date">21.01.2025</span>
+      </div>
+    </div>
+    <div class="card" data-category="reviews">
+      <div class="card_image">
+        <img src="assets/img/image%20(1).png" alt="News 3">
+      </div>
+      <div class="card_content">
+        <h2>Обзор нового VR</h2>
+        <span class="date">21.01.2025</span>
+      </div>
+    </div>
+    <div class="card" data-category="events">
+      <div class="card_image">
+        <img src="assets/img/image%20(1).png" alt="News 3">
+      </div>
+      <div class="card_content">
+        <h2>Вебинар по VP</h2>
+        <span class="date">21.01.2025</span>
+      </div>
+    </div>
+  </div>
+
+</section>
 <script src="assets/js/script.js"></script>
+</body>
 </html>
