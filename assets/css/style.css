@@ -591,6 +591,74 @@ nav ul li{
     flex-direction: column;
 }
 
+.preview-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: black;
+}
+
+.preview-content {
+    height: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.preview-info{
+    color: #666;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.preview-city{
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+.vacation-info{
+    background: #FFFFFF;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    width: 75%;
+    display: flex;
+    margin: 60px 40px 10px 220px;
+}
+
+
+.what-we-need{
+    height: 40%;
+    padding: 20px;
+}
+
+.what-we-need h2{
+    color: black;
+    font-weight: 500;
+    font-size: 2.2rem;
+    margin-left: 1rem;
+}
+
+.what-we-need p{
+    color: black;
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+
+.vacation-preview {
+    background: #FFFFFF;
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
 .view-btn{
     border:none;
     border-radius: 20px;

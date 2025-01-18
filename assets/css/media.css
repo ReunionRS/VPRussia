@@ -248,3 +248,68 @@
         height: auto; /* Автоматическая высота для гибкости */
     }
 }
+
+/* Адаптивность для блока вакансий */
+@media (max-width: 1200px) {
+    .vacation_block {
+        width: 90%;
+        margin-left: 5%;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 60px;
+    }
+    .venue-content{
+        height: 60%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .vacation_block {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 50px;
+    }
+    .vacation-card {
+        height: auto; /* Автоматическая высота для гибкости */
+    }
+}
+
+@media (max-width: 768px) {
+    .vacation_block {
+        width: 95%;
+        margin-left: 2.5%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 60px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .vacation_block {
+        grid-template-columns: 1fr; /* Один столбец */
+        gap: 50px;
+    }
+    .vacation-card {
+        height: auto; /* Автоматическая высота для гибкости */
+    }
+}
+
+/* Адаптивность для кнопки "Посмотреть" */
+@media (max-width: 768px) {
+    .view-btn {
+        width: 200px;
+        font-size: 1rem;
+    }
+
+    .view-btn:hover{
+        width: 200px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .view-btn {
+        width: 150px;
+    }
+    .view-btn:hover {
+        width: 150px;
+    }
+}
