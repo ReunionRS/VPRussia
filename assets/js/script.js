@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function filterNews(category) {
         newsCards.forEach(card => {
             if (category === 'all' || card.dataset.category === category) {
-                card.style.display = 'block'; // Показываем карточку
+                card.style.display = 'block';
             } else {
-                card.style.display = 'none'; // Скрываем карточку
+                card.style.display = 'none';
             }
         });
     }
