@@ -114,6 +114,7 @@ nav ul li{
 #nav-menu {
     transition: transform 0.3s ease;
     transform: translateX(30%);
+    z-index: 9999;
 }
 #nav-toggle:checked ~ #nav-menu{
     transform: translateX(0);
@@ -281,6 +282,117 @@ nav ul li{
     color: black;
 }
 
+/*Places*/
+
+.venues_block {
+    width: 100%;
+    padding: 40px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.venue-card {
+    background: #FFFFFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.venue-image {
+    height: 60%;
+    overflow: hidden;
+}
+
+.venue-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.venue-content {
+    height: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.venue-content h3 {
+    color: #000000;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.venue-city {
+    color: #666;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.venue-info {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Persons Block Styles */
+.persons_block {
+    width: 100%;
+    padding: 40px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 70px;
+}
+
+.person-card {
+    background: #FFFFFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
 
 
+.person-image {
+    height: 70%;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: scale(1);
+}
 
+.person-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.person-content {
+    height: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.person-content h3 {
+    color: #000000;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.person-content .company {
+    color: #666;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.person-content .position {
+    color: #333;
+    font-size: 1rem;
+}
