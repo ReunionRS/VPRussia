@@ -752,8 +752,7 @@ nav ul li{
     gap: 1rem;
     color: black;
     font-size: 0.875rem;
-    margin: 1rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 0.2rem;
 }
 
 .trending-card h3,
@@ -796,8 +795,14 @@ nav ul li{
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.news-card h3{
+    color: black;
+}
+
 .categories-list {
     list-style: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .categories-list li a {
