@@ -733,6 +733,7 @@ nav ul li{
     background: rgba(255, 255, 255, 0.05);
     border-radius: 0.5rem;
     overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -773,6 +774,7 @@ nav ul li{
 .specialist-card {
     text-align: center;
     padding-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .specialist-card .company,
@@ -791,6 +793,7 @@ nav ul li{
 .news-card {
     padding: 1rem;
     margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .categories-list {
