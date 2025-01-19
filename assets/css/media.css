@@ -388,3 +388,46 @@
     }
 
 }
+
+@media (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .main-article h1 {
+        font-size: 2rem;
+    }
+
+    .article-image {
+        height: 300px;
+    }
+
+    .comments-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .add-comment-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
