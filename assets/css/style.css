@@ -1063,7 +1063,7 @@ nav ul li{
 .mobile-menu-trigger {
     display: none;
     position: fixed;
-    top: 1rem;
+    bottom: 1rem;
     right: 1rem;
     z-index: 100;
     background: #1A2B3CFF;
