@@ -61,35 +61,123 @@
   </nav>
 </header>
 <section class="general_container">
-  <div class="news_block">
-    <div class="card" data-category="interview">
-      <div class="card_image">
-        <img src="assets/img/image.png" alt="News 3">
+
+  <section class="trending">
+    <div class="container">
+      <div class="section-header">
+        <h2>Популярное</h2>
       </div>
-      <div class="card_content">
-        <h2>Unreal Engine 5 в кинопроизводстве</h2>
-        <span class="date">21.01.2025</span>
-      </div>
-    </div>
-    <div class="card" data-category="reviews">
-      <div class="card_image">
-        <img src="assets/img/image%20(1).png" alt="News 3">
-      </div>
-      <div class="card_content">
-        <h2>Обзор новой камеры</h2>
-        <span class="date">21.01.2025</span>
+      <div class="trending-grid">
+        <article class="trending-card">
+          <img src="assets/img/image%20(1).png" alt="Unreal Engine 5">
+          <h3>Unreal Engine 5 в российском кинопроизводстве</h3>
+          <p>Как ведущие студии используют UE5 для создания виртуальных сетов</p>
+          <span class="date">2024-02-20</span>
+        </article>
       </div>
     </div>
-    <div class="card" data-category="events">
-      <div class="card_image">
-        <img src="assets/img/image%20(1).png" alt="News 3">
-      </div>
-      <div class="card_content">
-        <h2>Конференция в Москве</h2>
-        <span class="date">21.01.2025</span>
+  </section>
+
+  <section class="news-categories">
+    <div class="container">
+      <div class="news-grid">
+        <div class="latest-news">
+          <div class="section-header">
+            <h2>Последние новости</h2>
+          </div>
+          <article class="news-card">
+            <div class="card-meta">
+              <time>2024-02-18</time>
+              <span class="category">Новости</span>
+            </div>
+            <h3>Открытие новой VP студии в Москве</h3>
+          </article>
+          <article class="news-card">
+            <div class="card-meta">
+              <time>2024-02-17</time>
+              <span class="category">События</span>
+            </div>
+            <h3>Конференция VP Tech 2024 анонсирована</h3>
+          </article>
+          <article class="news-card">
+            <div class="card-meta">
+              <time>2024-02-16</time>
+              <span class="category">Образование</span>
+            </div>
+            <h3>Новые курсы по Virtual Production</h3>
+          </article>
+        </div>
+        <aside class="categories">
+          <div class="section-header">
+            <h2>Категории</h2>
+          </div>
+          <ul class="categories-list">
+            <li><a href="#">Технологии <span>15</span></a></li>
+            <li><a href="#">Оборудование <span>12</span></a></li>
+            <li><a href="#">Проекты <span>8</span></a></li>
+            <li><a href="#">Образование <span>10</span></a></li>
+            <li><a href="#">События <span>5</span></a></li>
+          </ul>
+        </aside>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section class="equipment">
+    <div class="container">
+      <div class="section-header">
+        <h2>Новое оборудование для аренды</h2>
+      </div>
+      <div class="equipment-grid">
+        <article class="equipment-card">
+          <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" alt="LED-стена">
+          <h3>LED-стена ROE Visual Ruby 2.3</h3>
+          <p>Светодиодный экран высокого разрешения для VP</p>
+          <span class="price">150 000 ₽/день</span>
+        </article>
+        <article class="equipment-card">
+          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" alt="Disguise vx 4+">
+          <h3>Disguise vx 4+</h3>
+          <p>Медиасервер для управления контентом</p>
+          <span class="price">80 000 ₽/день</span>
+        </article>
+        <article class="equipment-card">
+          <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e" alt="Unreal Engine Station">
+          <h3>Unreal Engine Operator Station</h3>
+          <p>Рабочая станция для оператора UE</p>
+          <span class="price">45 000 ₽/день</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="specialists">
+    <div class="container">
+      <div class="section-header">
+        <h2>Специалисты</h2>
+      </div>
+      <div class="specialists-grid">
+        <article class="specialist-card">
+          <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" alt="Александр Петров">
+          <h3>Александр Петров</h3>
+          <p class="company">Virtual Stage</p>
+          <p class="position">Technical Director</p>
+        </article>
+        <article class="specialist-card">
+          <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" alt="Елена Соколова">
+          <h3>Елена Соколова</h3>
+          <p class="company">Digital Art Studio</p>
+          <p class="position">Unreal Engine Artist</p>
+        </article>
+        <article class="specialist-card">
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" alt="Дмитрий Волков">
+          <h3>Дмитрий Волков</h3>
+          <p class="company">VP Solutions</p>
+          <p class="position">VP Producer</p>
+        </article>
+      </div>
+    </div>
+  </section>
 </section>
 <script src="assets/js/script.js"></script>
 </body>

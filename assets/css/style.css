@@ -24,7 +24,7 @@ body{
 header{
     width: 100%;
     height: 15vh;
-    background-color: #1A1F2C;
+    background-color: #1e293b;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -687,3 +687,140 @@ nav ul li{
     transition: 0.2s ease;
 }
 
+/* Section Styles */
+
+
+.general_container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.trending, .news-categories, .equipment, .specialists{
+    margin-top: 3rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.section-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* Grid Layouts */
+.trending-grid,
+.equipment-grid,
+.specialists-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Cards */
+.trending-card,
+.equipment-card,
+.specialist-card,
+.news-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+
+/* Card Images */
+.trending-card img,
+.equipment-card img,
+.specialist-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card Content */
+.card-meta {
+    display: flex;
+    gap: 1rem;
+    color: black;
+    font-size: 0.875rem;
+    margin: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.trending-card h3,
+.equipment-card h3,
+.specialist-card h3 {
+    margin: 1rem;
+    font-size: 1.25rem;
+    color: black;
+}
+
+.trending-card p,
+.equipment-card p {
+    margin: 0 1rem 1rem;
+    color: black;
+}
+
+/* Specialist Cards */
+.specialist-card {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.specialist-card .company,
+.specialist-card .position {
+    color: black;
+    margin: 0.5rem 1rem;
+}
+
+/* News and Categories */
+.news-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.news-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.categories-list {
+    list-style: none;
+}
+
+.categories-list li a {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.categories-list li a:hover {
+    color: black;
+}
+
+.categories-list span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+}
+
+/* Price Tag */
+.price {
+    display: block;
+    color: black;
+    font-weight: bold;
+    margin: 1rem;
+}
