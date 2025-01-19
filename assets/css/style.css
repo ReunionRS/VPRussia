@@ -666,7 +666,7 @@ nav ul li{
     font-style: normal;
 }
 
-.trending, .news-categories, .equipment, .specialists{
+.trending, .news-categories, .equipment{
     margin-top: 3rem;
 }
 
@@ -684,8 +684,7 @@ nav ul li{
 
 /* Grid Layouts */
 .trending-grid,
-.equipment-grid,
-.specialists-grid {
+.equipment-grid{
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -694,7 +693,6 @@ nav ul li{
 /* Cards */
 .trending-card,
 .equipment-card,
-.specialist-card,
 .news-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 0.5rem;
@@ -705,8 +703,7 @@ nav ul li{
 
 /* Card Images */
 .trending-card img,
-.equipment-card img,
-.specialist-card img {
+.equipment-card img{
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -722,8 +719,7 @@ nav ul li{
 }
 
 .trending-card h3,
-.equipment-card h3,
-.specialist-card h3 {
+.equipment-card h3{
     margin: 1rem;
     font-size: 1.25rem;
     color: black;
@@ -733,19 +729,6 @@ nav ul li{
 .equipment-card p {
     margin: 0 1rem 1rem;
     color: black;
-}
-
-/* Specialist Cards */
-.specialist-card {
-    text-align: center;
-    padding-bottom: 1rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.specialist-card .company,
-.specialist-card .position {
-    color: black;
-    margin: 0.5rem 1rem;
 }
 
 /* News and Categories */
