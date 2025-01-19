@@ -163,43 +163,14 @@ nav ul li{
     display: block;
 }
 
-/*News*/
-
-.news_banner{
-    width: 93%;
-    height: 10vh;
-    background-color: #1A1F2C;
-    margin-top: 3.5rem;
-    float: right;
-}
-
-.news_banner h1{
-    position: relative;
-    top: 15px;
-    left: 40px;
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-
-/* News Banner */
-.news-banner {
-    width: 95%;
-    background-color: #1A1F2C;
-    padding: 15px 30px;
-    margin-left: auto;
-    margin-right: 0;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-}
-
-.news-banner h2 {
-    color: white;
-    font-size: 2rem;
-    font-weight: 500;
-}
-
 /* News Block Styles */
+
+.news_container{
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
 .news_block {
     width: 100%;
     padding: 40px 5%;
@@ -691,7 +662,7 @@ nav ul li{
 
 
 .general_container{
-    max-width: 1280px;
+    max-width: 1480px;
     margin: 0 auto;
     padding: 0 2rem;
     font-family: "Open Sans", serif;
