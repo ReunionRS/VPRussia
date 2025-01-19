@@ -100,7 +100,6 @@
     }
 }
 
-/* Адаптивность блока новостей*/
 @media (max-width: 600px) {
     .news_block {
         grid-template-columns: 1fr;
@@ -150,12 +149,12 @@
 
 @media (max-width: 1024px) {
     .venues_block {
-        display: flex; /* Включаем flexbox для рядов */
-        flex-wrap: wrap; /* Разрешаем перенос на новую строку */
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
     .venue-card {
-        width: calc(50% - 20px); /* Две карточки в ряду */
+        width: calc(50% - 20px);
         margin: 10px;
     }
 
@@ -163,12 +162,11 @@
 
 @media (max-width: 768px) {
     .venue-card {
-        width: calc(100% - 20px); /* Одна карточка в ряду */
+        width: calc(100% - 20px);
     }
 }
 
 
-/* Адаптивность для кнопки "Арендовать" */
 @media (max-width: 768px) {
     .rent_btn {
         width: 200px;
@@ -194,7 +192,6 @@
 }
 
 
-/* Адаптивность для модального окна */
 @media (max-width: 600px) {
     .modal-content {
         width: 90%;
@@ -209,7 +206,6 @@
     }
 }
 
-/* Адаптивность для блока вакансий */
 @media (max-width: 1200px) {
     .vacation_block {
         width: 90%;
@@ -225,7 +221,7 @@
         gap: 40px;
     }
     .vacation-card {
-        height: auto; /* Автоматическая высота для гибкости */
+        height: auto;
     }
 }
 
@@ -241,15 +237,14 @@
 
 @media (max-width: 480px) {
     .vacation_block {
-        grid-template-columns: 1fr; /* Один столбец */
+        grid-template-columns: 1fr;
         gap: 50px;
     }
     .vacation-card {
-        height: auto; /* Автоматическая высота для гибкости */
+        height: auto;
     }
 }
 
-/* Адаптивность для блока вакансий */
 @media (max-width: 1200px) {
     .vacation_block {
         width: 90%;
@@ -268,7 +263,7 @@
         gap: 50px;
     }
     .vacation-card {
-        height: auto; /* Автоматическая высота для гибкости */
+        height: auto;
     }
 }
 
@@ -284,15 +279,14 @@
 
 @media (max-width: 480px) {
     .vacation_block {
-        grid-template-columns: 1fr; /* Один столбец */
+        grid-template-columns: 1fr;
         gap: 50px;
     }
     .vacation-card {
-        height: auto; /* Автоматическая высота для гибкости */
+        height: auto;
     }
 }
 
-/* Адаптивность для кнопки "Посмотреть" */
 @media (max-width: 768px) {
     .view-btn {
         width: 200px;
@@ -314,20 +308,20 @@
     }
 }
 
-/* Общая адаптивность для контейнера */
+
 @media (max-width: 1200px) {
     .vacation_view_block {
         width: 95%;
         margin-left: 2.5%;
     }
 }
-/* Адаптивность для vacation-preview */
+
 @media (max-width: 1024px) {
     .vacation-preview {
         height: auto;
     }
     .preview-content {
-        height: auto; /* Allow content to determine height */
+        height: auto;
         padding-bottom: 25px;
     }
 }
@@ -344,20 +338,19 @@
     }
 
 }
-/* Адаптивность для vacation-info */
+
 @media (max-width: 1024px) {
     .vacation-info {
-        width: 90%; /* Адаптивная ширина */
-        margin: 30px auto 10px; /* Адаптивные отступы и центрирование */
+        width: 90%;
+        margin: 30px auto 10px;
     }
 }
 @media (max-width: 768px) {
     .vacation-info {
-        margin: 20px auto 10px; /* Адаптивные отступы */
+        margin: 20px auto 10px;
     }
 }
 
-/* Адаптивность для what-we-need */
 @media (max-width: 768px) {
     .what-we-need {
         height: auto;
@@ -384,7 +377,7 @@
         font-size: 1rem;
     }
     .vacation-info {
-        width: 95%; /* Адаптивная ширина */
+        width: 95%;
     }
 
 }

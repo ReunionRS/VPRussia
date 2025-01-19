@@ -41,26 +41,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Получаем все кнопки "Арендовать"
 const rentButtons = document.querySelectorAll('.rent_btn');
-// Получаем модальное окно
 const modal = document.getElementById('modal');
-// Получаем кнопку закрытия модального окна
 const closeButton = document.querySelector('.close');
 
-// Добавляем обработчик клика на каждую кнопку
 rentButtons.forEach(button => {
     button.addEventListener('click', () => {
         modal.style.display = "block";
     });
 });
 
-// Добавляем обработчик клика на кнопку закрытия
 closeButton.addEventListener('click', () => {
     modal.style.display = "none";
 });
 
-// Закрытие модального окна при клике вне его области
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
