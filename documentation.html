@@ -61,7 +61,86 @@
   </nav>
 </header>
 <section class="doc_block">
+  <button class="mobile-menu-trigger" onclick="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+  </button>
 
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="search-container">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" placeholder="Поиск по документации..." class="search-input">
+        </div>
+      </div>
+      <nav class="nav-group">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#getting-started" class="nav-link">
+              <i class="fas fa-home"></i>
+              <span>Начало работы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#basics" class="nav-link">
+              <i class="fas fa-book"></i>
+              <span>Основы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#virtual-camera" class="nav-link">
+              <i class="fas fa-camera"></i>
+              <span>Виртуальная камера</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#led-walls" class="nav-link">
+              <i class="fas fa-tv"></i>
+              <span>LED Экраны</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#production" class="nav-link">
+              <i class="fas fa-film"></i>
+              <span>Продакшен</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#setup" class="nav-link">
+              <i class="fas fa-cog"></i>
+              <span>Технические установки</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="doc-content">
+        <h1>Virtual Production Documentation</h1>
+
+        <p>Welcome to the comprehensive guide on Virtual Production. This documentation will help you understand and implement virtual production techniques in your projects.</p>
+
+        <h2 id="getting-started">Getting Started</h2>
+        <p>Virtual Production (VP) combines physical and digital worlds in real-time, enabling filmmakers to visualize and interact with digital environments during live production.</p>
+
+        <h2 id="basics">Basic Concepts</h2>
+        <p>Learn the fundamental concepts of virtual production, including real-time rendering, camera tracking, and digital asset management.</p>
+
+        <h2 id="virtual-camera">Virtual Camera</h2>
+        <p>Understand how virtual cameras work in VP environments, including setup, calibration, and operation techniques.</p>
+
+        <h2 id="led-walls">LED Walls</h2>
+        <p>Explore the use of LED walls in virtual production, including technical specifications, content requirements, and best practices.</p>
+
+        <h2 id="production">Production</h2>
+        <p>Discover the workflow and processes involved in virtual production, from pre-visualization to final shooting.</p>
+
+        <h2 id="setup">Technical Setup</h2>
+        <p>Learn about the technical requirements, hardware setup, and software configurations needed for virtual production.</p>
+      </div>
+    </main>
+  </div>
 </section>
 <script src="assets/js/script.js"></script>
 </body>

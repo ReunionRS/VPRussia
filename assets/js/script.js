@@ -66,3 +66,8 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('active');
+}
