@@ -165,12 +165,6 @@ nav ul li{
 
 /* News Block Styles */
 
-.news_container{
-    max-width: 1700px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
 .news_block {
     width: 100%;
     padding: 40px 5%;
