@@ -10,10 +10,6 @@
         flex-direction: column;
         text-align: center;
     }
-    nav img{
-        margin-bottom: 10px;
-        margin-left: 0;
-    }
     nav ul li{
         margin: 0.5rem 0;
     }
@@ -25,7 +21,7 @@
         position: fixed;
         top: 0;
         right: 0;
-        background-color: #1A1F2C;
+        background-color: white;
         height: 100vh;
         width: 250px;
         padding-top: 50px;
@@ -51,7 +47,7 @@
         display: block;
     }
     .dropdown li a{
-        color: white;
+        color: black;
         padding: 10px 0;
         text-align: left;
     }
