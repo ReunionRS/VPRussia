@@ -196,6 +196,16 @@ footer h1{
     gap: 30px;
 }
 
+.news_container{
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
 .card {
     position: relative;
     background: #FFFFFF;
