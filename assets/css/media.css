@@ -441,3 +441,33 @@
         display: block;
     }
 }
+
+@media (max-width: 768px) {
+    .card_content .card_category {
+        font-size: 0.8rem; /* Уменьшаем размер шрифта на маленьких экранах */
+        padding: 4px 8px; /* Уменьшаем внутренние отступы */
+    }
+
+    .card_content h2 {
+        font-size: 1.2rem;
+    }
+
+    .date {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .card_content .card_category {
+        font-size: 0.7rem; /* Еще уменьшаем размер шрифта */
+        padding: 3px 6px; /* Еще уменьшаем внутренние отступы */
+
+    }
+    .card_content h2 {
+        font-size: 1.1rem;
+    }
+    .date {
+        font-size: 0.7rem;
+    }
+}
