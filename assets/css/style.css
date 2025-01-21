@@ -196,7 +196,7 @@ footer h1{
     gap: 30px;
 }
 
-.news_container{
+.news_container, .venues_block, .persons_block, .vacation_block{
     max-width: 1680px;
     margin: 0 auto;
     padding: 0 2rem;
