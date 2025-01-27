@@ -66,3 +66,47 @@ function toggleSidebar() {
     sidebar.classList.toggle('active');
 }
 
+function showRentForm() {
+    document.getElementById('modalOverlay').style.display = 'flex';
+}
+
+function hideRentForm() {
+    document.getElementById('modalOverlay').style.display = 'none';
+}
+
+function updateContactPlaceholder() {
+    const contactMethod = document.getElementById('contact-method').value;
+    const contactDetailInput = document.getElementById('contact-detail');
+
+    switch (contactMethod) {
+        case 'email':
+            contactDetailInput.placeholder = 'Укажите вашу почту';
+            break;
+        case 'telegram':
+            contactDetailInput.placeholder = 'Ваш @username';
+            break;
+        case 'phone':
+            contactDetailInput.placeholder = 'Ваш номер телефона';
+            break;
+        case 'whatsapp':
+            contactDetailInput.placeholder = 'Ваш номер WhatsApp';
+            break;
+        default:
+            contactDetailInput.placeholder = 'Укажите ваш способ связи';
+            break;
+    }
+}
+
+function submitRentForm() {
+    const name = document.getElementById('name').value;
+    const contactMethod = document.getElementById('contact-method').value;
+    const contactDetail = document.getElementById('contact-detail').value;
+
+    if (name && contactMethod && contactDetail) {
+        alert(`Заявка отправлена! Имя: ${name}, Связь через: ${contactMethod}, Контакт: ${contactDetail}`);
+        hideRentForm();
+    }else{
+        alert(`Заполните все поля`)
+    }
+}
+

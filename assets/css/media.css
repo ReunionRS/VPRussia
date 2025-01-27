@@ -444,8 +444,8 @@
 
 @media (max-width: 768px) {
     .card_content .card_category {
-        font-size: 0.8rem; /* Уменьшаем размер шрифта на маленьких экранах */
-        padding: 4px 8px; /* Уменьшаем внутренние отступы */
+        font-size: 0.8rem;
+        padding: 4px 8px;
     }
 
     .card_content h2 {
@@ -460,8 +460,8 @@
 
 @media (max-width: 480px) {
     .card_content .card_category {
-        font-size: 0.7rem; /* Еще уменьшаем размер шрифта */
-        padding: 3px 6px; /* Еще уменьшаем внутренние отступы */
+        font-size: 0.7rem;
+        padding: 3px 6px;
 
     }
     .card_content h2 {
@@ -469,5 +469,32 @@
     }
     .date {
         font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 20px auto;
+    }
+    .rent-section {
+        border-left: none;
+        border-top: 1px solid #e0e0e0;
+        align-items: center;
+    }
+    .product-info {
+        padding-bottom: 0;
+    }
+    .modal-content {
+        max-width: 90%;
+    }
+    .other-products{
+        padding: 10px;
+    }
+    .other-products h2{
+        margin-bottom: 10px;
+    }
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
 }

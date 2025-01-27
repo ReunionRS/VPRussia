@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VPRussia - Технологический портал про Virtual Production</title>
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/media.css" rel="stylesheet">
+  <link rel="icon" href="assets/img/png/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+  <nav>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span class="hamburger"></span>
+    </label>
+    <a href="index.html" class="logo-link">
+      <img src="assets/img/Logo.png">
+      <h1 alt="Логотип" class="logo">VPRussia</h1>
+    </a>
+    <ul id="nav-menu">
+      <li>
+        <a href="worldnews.html" class="page-link">Новости VP</a>
+      </li>
+      <li class="dropdown-parent">
+        <a href="#" class="page-link">VP Участники</a>
+        <ul class="dropdown">
+          <li><a href="stages.html" class="page-link">Площадки</a></li>
+          <li><a href="production.html" class="page-link">Продакшн</a></li>
+          <li><a href="rental.html" class="page-link">Рентал</a></li>
+          <li><a href="manufacturies.html" class="page-link">Производители</a></li>
+          <li><a href="persons.html" class="page-link">Персоны</a></li>
+        </ul>
+      </li>
+      <li class="dropdown-parent">
+        <a href="#" class="page-link">Образование</a>
+        <ul class="dropdown">
+          <li><a href="intensives.html" class="page-link">Интенсивы</a></li>
+          <li><a href="dictionary.html" class="page-link">Словарь</a></li>
+          <li><a href="documentation.html" class="page-link">Справочные материалы</a></li>
+        </ul>
+      </li>
+      <li class="dropdown-parent">
+        <a href="#" class="page-link">Биржа</a>
+        <ul class="dropdown">
+          <li><a href="rent.html" class="page-link">Аренда</a></li>
+          <li><a href="vacation.html" class="page-link">Вакансии</a></li>
+          <li><a href="specialist.html" class="page-link">Специалисты</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="about_project.html" class="page-link">О проекте</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="product-container">
+  <div class="product-section">
+    <div class="product-image">
+      <img src="assets/img/image%20(3).png" alt="Изображение товара">
+      <div class="rent-section">
+        <div class="price">
+          <span>Цена за сутки:</span>
+          <span class="price-value">1500 ₽</span>
+        </div>
+        <button class="rent-button" onclick="showRentForm()">Арендовать</button>
+      </div>
+    </div>
+    <div class="product-info">
+      <h2>Название товара</h2>
+      <p>Описание товара. Здесь может быть размещена подробная информация о продукте, его характеристиках и особенностях.</p>
+      <p><strong>Преимущества:</strong></p>
+      <p>Текст</p>
+      <p>Текст</p>
+      <p>Текст</p>
+      <p><strong>Что входит в комплект:</strong> </p>
+      <p>Текст</p>
+      <p>Текст</p>
+      <p>Текст</p>
+      <h3>Владелец оборудования</h3>
+      <div class="owner-info">
+        <img src="assets/img/Lumix.png" alt="Логотип компании" class="owner-logo">
+        <span class="owner-name">Название компании рентала</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="other-products">
+  <h2>Другие товары</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="assets/img/image%20(3).png" alt="товар">
+      <h3>Товар 1</h3>
+      <p>1390₽</p>
+    </div>
+    <div class="product-card">
+      <img src="assets/img/image%20(3).png" alt="товар">
+      <h3>Товар 1</h3>
+      <p>1390₽</p>
+    </div>
+    <div class="product-card">
+      <img src="assets/img/image%20(3).png" alt="товар">
+      <h3>Товар 1</h3>
+      <p>1390₽</p>
+    </div>
+  </div>
+</section>
+
+<div class="modal-overlay" id="modalOverlay" style="display: none;">
+  <div class="modal-content">
+    <span class="close-button" onclick="hideRentForm()">&times;</span>
+    <h2>Заявка на аренду</h2>
+    <input type="text" id="name" placeholder="Ваше имя" required>
+    <select id="contact-method" onchange="updateContactPlaceholder()">
+      <option value="" disabled selected>Как с вами связаться?</option>
+      <option value="email">Почта</option>
+      <option value="telegram">Telegram</option>
+      <option value="phone">Номер телефона</option>
+      <option value="whatsapp">WhatsApp</option>
+    </select>
+    <input type="text" id="contact-detail" placeholder="Укажите ваш способ связи" required>
+    <button onclick="submitRentForm()">Отправить заявку</button>
+  </div>
+</div>
+
+<footer>
+  <h1>VPrussia 2025</h1>
+</footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
